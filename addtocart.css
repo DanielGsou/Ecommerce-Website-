@@ -1,4 +1,5 @@
-*{
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,14 +7,16 @@
     font-size: 18px;
 }
 
-body{
+/* Estilo geral para o corpo da página */
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.header{
+/* Estilo para o cabeçalho da página */
+.header {
     height: 80px;
     width: 70%;
     background-color: #433d3d;
@@ -25,13 +28,15 @@ body{
     padding: 15px;
 }
 
-.header .logo{
+/* Estilo para o logo no cabeçalho */
+.header .logo {
     font-size: 40px;
     font-weight: bold;
-    color: #f77014;
+    color: #ffffff;
 }
 
-.cart{
+/* Estilo para o carrinho no cabeçalho */
+.cart {
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -41,11 +46,13 @@ body{
     width: 80px;
 }
 
-.fa.solid{
+/* Estilo para o ícone do carrinho */
+.fa.solid {
     color: #f77014;
 }
 
-.cart p{
+/* Estilo para o número de itens no carrinho */
+.cart p {
     height: 22px;
     width: 22px;
     display: flex;
@@ -56,30 +63,33 @@ body{
     color: white;
 }
 
-.container{
+/* Estilo para o contêiner principal */
+.container {
     display: flex;
     width: 70%;
     margin-bottom: 30px;
 }
 
-#root{
+/* Estilo para a área de exibição dos produtos */
+#root {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
-.sidebar{
+/* Estilo para a barra lateral */
+.sidebar {
     width: 40%;
     border-radius: 5px;
     background-color: #eee;
     margin-left: 20px;
     padding: 15px;
     text-align: center;
-
 }
 
-.head{
+/* Estilo para o cabeçalho da barra lateral */
+.head {
     background-color: #f77014;
     border-radius: 3px;
     height: 40px;
@@ -90,7 +100,8 @@ body{
     align-items: center;
 }
 
-.foot{
+/* Estilo para o rodapé da barra lateral */
+.foot {
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
@@ -98,7 +109,8 @@ body{
     border-top: 1px solid #433d3d;
 }
 
-.box{
+/* Estilo para as caixas de produtos */
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +120,8 @@ body{
     padding: 15px;
 }
 
-.img-box{
+/* Estilo para a área de imagem da caixa do produto */
+.img-box {
     width: 100%;
     height: 180px;
     display: flex;
@@ -116,14 +129,16 @@ body{
     justify-content: center;
 }
 
-.images{
+/* Estilo para as imagens dos produtos */
+.images {
     max-width: 90%;
     max-height: 90%;
     object-fit: cover;
     object-position: center;
 }
 
-.bottom{
+/* Estilo para a parte inferior da caixa do produto */
+.bottom {
     margin-top: 20px;
     width: 100%;
     text-align: center;
@@ -134,12 +149,14 @@ body{
     height: 110px;
 }
 
-h2{
+/* Estilo para o preço dos produtos */
+h2 {
     font-size: 20px;
     color: rgb(255, 38, 0);
 }
 
-button{
+/* Estilo para o botão "Add to cart" */
+button {
     width: 100%;
     position: relative;
     border: none;
@@ -150,6 +167,43 @@ button{
     color: white;
 }
 
-button:hover{
+/* Estilo para o botão "Add to cart" quando passa o mouse por cima */
+button:hover {
     background-color: #f77014;
+}
+
+/* Estilo para os itens no carrinho */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+/* Estilo para a área de imagem dos itens no carrinho */
+.row-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #f77014;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para as imagens dos itens no carrinho */
+.rowimg {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+/* Estilo para o ícone de lixeira quando passa o mouse por cima */
+.fa-trash:hover {
+    cursor: pointer;
+    color: #f77014;
 }
